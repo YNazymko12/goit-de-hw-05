@@ -64,7 +64,7 @@ except Exception as e:
     print(Fore.RED + f"❌ An error occurred during topic creation: {e}")
 
 # Виведення обмеженого списку існуючих топіків
-print(Fore.GREEN + "\n==== All Existing Topics (Limited Display) ====")
+print(Fore.GREEN + "\n==== All Existing Topics ====")
 limited_topics = list(existing_topics)[:MAX_TOPICS_DISPLAY]
 for topic in limited_topics:
     if topic in topics:
